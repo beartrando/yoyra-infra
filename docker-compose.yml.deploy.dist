@@ -1,7 +1,7 @@
 services:
   gateway:
     container_name: ttt-gateway
-    image: ghcr.io/beartrando/tic-tac-toe-gateway/service:${GATEWAY_VERSION}
+    image: ghcr.io/beartrando/yoyra-gateway/service:${GATEWAY_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.gateway
@@ -18,7 +18,7 @@ services:
 
   auth:
     container_name: ttt-auth
-    image: ghcr.io/beartrando/tic-tac-toe-auth/service:${AUTH_VERSION}
+    image: ghcr.io/beartrando/yoyra-auth/service:${AUTH_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.auth
@@ -40,7 +40,7 @@ services:
 
   orchestration:
     container_name: ttt-orchestration
-    image: ghcr.io/beartrando/tic-tac-toe-orchestration/service:${ORCHESTRATION_VERSION}
+    image: ghcr.io/beartrando/yoyra-orchestration/service:${ORCHESTRATION_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.orchestration
@@ -60,7 +60,7 @@ services:
 
   bot:
     container_name: ttt-bot
-    image: ghcr.io/beartrando/tic-tac-toe-bot/service:${BOT_VERSION}
+    image: ghcr.io/beartrando/yoyra-bot/service:${BOT_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.bot
@@ -78,7 +78,7 @@ services:
 
   battle:
     container_name: ttt-battle
-    image: ghcr.io/beartrando/tic-tac-toe-battle/service:${BATTLE_VERSION}
+    image: ghcr.io/beartrando/yoyra-battle/service:${BATTLE_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.battle
@@ -98,7 +98,7 @@ services:
 
   streaming:
     container_name: ttt-streaming
-    image: ghcr.io/beartrando/tic-tac-toe-streaming/service:${STREAMING_VERSION}
+    image: ghcr.io/beartrando/yoyra-streaming/service:${STREAMING_VERSION}
     restart: unless-stopped
     env_file:
         - ./services/.env.streaming
@@ -115,7 +115,7 @@ services:
 
   profile:
     container_name: ttt-profile
-    image: ghcr.io/beartrando/tic-tac-toe-profile/service:${PROFILE_VERSION}
+    image: ghcr.io/beartrando/yoyra-profile/service:${PROFILE_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.profile
@@ -135,7 +135,7 @@ services:
 
   engine:
     container_name: ttt-engine
-    image: ghcr.io/beartrando/tic-tac-toe-engine/service:${ENGINE_VERSION}
+    image: ghcr.io/beartrando/yoyra-engine/service:${ENGINE_VERSION}
     restart: unless-stopped
     env_file:
       - ./services/.env.engine

@@ -5,5 +5,5 @@ resources:
   - secret.yaml
 
 images:
-  - name: ghcr.io/beartrando/tic-tac-toe-profile/service
+  - name: ghcr.io/beartrando/yoyra-profile/service
     newTag: "dev"
